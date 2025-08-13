@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import Button, { ButtonSecond } from "../UI/Button";
 
+interface TextWordProps {
+  padding?: string;
+}
+
 const StyledMainText = styled.div`
   padding: 8rem 0 0 0rem;
   max-width: 65rem;
@@ -14,9 +18,10 @@ const MainTextHeading = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const TextWord = styled.h1`
+const TextWord = styled.h1<TextWordProps>`
   font-size: 5rem;
   margin: -0.5rem;
+  padding: ${(props) => props.padding};
 
   background: linear-gradient(
     90deg,
@@ -55,11 +60,11 @@ export default function MainText({
   return (
     <StyledMainText>
       <MainTextHeading>
-        <TextWord>One-Stop Solution</TextWord>
+        {/* <TextWord>One-Stop Solution</TextWord> */}
         <TextWord>
-          for <span>Tech-Driven</span> Financial
+          Full Stack <span>AI/ML</span> Platform For Finance & Asset
         </TextWord>
-        <TextWord>Asset Management</TextWord>
+        <TextWord padding={"0 0 0 0rem"}>Management</TextWord>
       </MainTextHeading>
 
       <Para>

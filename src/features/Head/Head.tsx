@@ -12,7 +12,7 @@ const HeadWrapper = styled.div`
   height: 8rem;
   padding: 0.6rem 10rem 0 25rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr;
   gap: 4rem;
 `;
 const Left = styled.div`
@@ -27,6 +27,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: end;
   gap: 5rem;
+  /* background-color: #ddff00; */
 `;
 const Items = styled.a<itemsprops>`
   text-transform: capitalize;
@@ -60,18 +61,25 @@ export default function Head({
       <Left>
         <Logo></Logo>
         <Items
-          href={"https://underwrite.echargeup.com"}
+          href={"https://underwrite.echargeup.com/verification"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          risQ
+          Risk Engine
         </Items>
         <Items
           href={"https://batterypulse.echargeup.com/"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          battery pulse
+          Digital Twin
+        </Items>
+        <Items
+          href={"https://underwrite.echargeup.com/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Karma Index
         </Items>
       </Left>
       <Right>

@@ -8,7 +8,6 @@ const StyledProduct = styled.div`
   gap: 10rem;
 `;
 const TextParent = styled.div`
-  text-transform: capitalize;
   h1 {
     font-size: 10rem;
     color: var(--color-gray-50);
@@ -65,18 +64,17 @@ export default function Product() {
       <StyledProduct>
         <TextParent>
           <h1>01</h1>
-          <h4>digital underwriting</h4>
+          <h4>Risk Engine</h4>
           <p>
-            Digital Underwriting is an advanced analytics platform that monitors
-            EV drivers by aggregating their credit data, risk scores, karma
-            ratings, EMI records, run kilometers, and service history. It offers
-            real-time insights, including location tracking and performance
-            dashboards, providing a complete view of driver behavior and
-            reliability for smarter decision-making.
+            Risk engine is an advanced analytics platform that streamlines
+            customer onboarding by generating a comprehensive risk score.
+            derived from factors such as digital footprint, identity confidence,
+            social footprint, and telecom risk, it enables smarter, faster, and
+            more reliable decision-making.
           </p>
           <div>
             <a
-              href={"https://underwrite.echargeup.com"}
+              href={"https://underwrite.echargeup.com/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -95,15 +93,15 @@ export default function Product() {
         </ImageParent>
         <TextParent>
           <h1>02</h1>
-          <h4>battery pulse</h4>
+          <h4>Digital Twin</h4>
           <p>
-            Battery Pulse is a smart battery intelligence platform designed to
-            deeply monitor battery performance and lifecycle. It analyzes
-            real-time data from all 16 internal cells, tracks every activity,
-            and provides actionable insights on health, efficiency, and faults.
-            With built-in inventory management and usage analytics, Battery
-            Pulse ensures optimal uptime and proactive maintenance for your
-            battery ecosystem.
+            Battery pulse is a smart battery intelligence platform designed to
+            deeply monitor battery performance and lifecycle. it analyzes
+            real-time data from all internal cells, tracks every activity, and
+            provides actionable insights on health, efficiency, and faults. with
+            built-in inventory management and usage analytics, battery pulse
+            ensures optimal uptime and proactive maintenance for your battery
+            ecosystem.
           </p>
           <div>
             <a
@@ -116,6 +114,34 @@ export default function Product() {
             </a>
           </div>
         </TextParent>
+      </StyledProduct>
+      <StyledProduct>
+        <TextParent>
+          <h1>03</h1>
+          <h4>Karma Index</h4>
+          <p>
+            Karma index is a dynamic performance metric that evaluates customer
+            reliability by analyzing real-time driving behavior and payment
+            discipline. it incorporates key indicators such as dpd, emi
+            timeliness, vehicle usage, and earning-to-expense patterns. by
+            blending behavioral and financial data, the karma index provides a
+            holistic score that helps identify trustworthy and consistent
+            customers.
+          </p>
+          <div>
+            <a
+              href={"https://underwrite.echargeup.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              click here
+              <FaArrowRightLong></FaArrowRightLong>
+            </a>
+          </div>
+        </TextParent>
+        <ImageParent>
+          <Image src="karma.png"></Image>
+        </ImageParent>
       </StyledProduct>
     </>
   );
