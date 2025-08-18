@@ -10,7 +10,7 @@ const HeadType = styled.div`
     var(--color-brand-green-300),
     var(--color-brand-green-500)
   );
-  max-width: 12rem;
+  max-width: 29rem;
   color: var(--color-gray-10);
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ const HeadType = styled.div`
 `;
 const StyledSectionHeading = styled.div`
   text-transform: capitalize;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 600;
   background: linear-gradient(
     90deg,
@@ -35,8 +35,10 @@ const StyledSectionHeading = styled.div`
 export default function SectionHeading() {
   return (
     <SectionHeadingParent>
-      <HeadType>products</HeadType>
-      <StyledSectionHeading>what we offer?</StyledSectionHeading>
+      <HeadType>chargeup tech solutions</HeadType>
+      <StyledSectionHeading>
+        holistic approach to EV adoption
+      </StyledSectionHeading>
     </SectionHeadingParent>
   );
 }

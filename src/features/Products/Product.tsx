@@ -17,11 +17,6 @@ const TextParent = styled.div`
     font-size: 3rem;
     color: var(--color-brand-original-blue-400);
   }
-  p {
-    font-size: 1.6rem;
-    color: var(--color-brand-blue-200);
-    margin-top: 1rem;
-  }
   div {
     display: flex;
     justify-content: end;
@@ -55,6 +50,12 @@ const TextParent = styled.div`
     }
   }
 `;
+const Text = styled.div`
+  font-size: 1.6rem;
+  color: var(--color-brand-blue-200);
+  margin-top: 1rem;
+  font-weight: 400;
+`;
 const ImageParent = styled.div``;
 const Image = styled.img``;
 
@@ -65,16 +66,16 @@ export default function Product() {
         <TextParent>
           <h1>01</h1>
           <h4>Risk Engine</h4>
-          <p>
+          <Text>
             Risk engine is an advanced analytics platform that streamlines
             customer onboarding by generating a comprehensive risk score.
             derived from factors such as digital footprint, identity confidence,
             social footprint, and telecom risk, it enables smarter, faster, and
             more reliable decision-making.
-          </p>
+          </Text>
           <div>
             <a
-              href={"https://underwrite.echargeup.com/"}
+              href={"https://underwrite.echargeup.com/verification"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,7 +95,7 @@ export default function Product() {
         <TextParent>
           <h1>02</h1>
           <h4>Digital Twin</h4>
-          <p>
+          <Text>
             Battery pulse is a smart battery intelligence platform designed to
             deeply monitor battery performance and lifecycle. it analyzes
             real-time data from all internal cells, tracks every activity, and
@@ -102,7 +103,7 @@ export default function Product() {
             built-in inventory management and usage analytics, battery pulse
             ensures optimal uptime and proactive maintenance for your battery
             ecosystem.
-          </p>
+          </Text>
           <div>
             <a
               href={"https://batterypulse.echargeup.com"}
@@ -119,7 +120,7 @@ export default function Product() {
         <TextParent>
           <h1>03</h1>
           <h4>Karma Index</h4>
-          <p>
+          <Text>
             Karma index is a dynamic performance metric that evaluates customer
             reliability by analyzing real-time driving behavior and payment
             discipline. it incorporates key indicators such as dpd, emi
@@ -127,7 +128,7 @@ export default function Product() {
             blending behavioral and financial data, the karma index provides a
             holistic score that helps identify trustworthy and consistent
             customers.
-          </p>
+          </Text>
           <div>
             <a
               href={"https://underwrite.echargeup.com"}
