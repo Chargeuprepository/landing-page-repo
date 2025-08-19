@@ -62,14 +62,14 @@ export default function MainText({
       <MainTextHeading>
         {/* <TextWord>One-Stop Solution</TextWord> */}
         <TextWord>
-          Full Stack <span>AI/ML</span> Platform For Finance & Asset
+          Full Stack <span>AI/ML</span> Platform For EV Finance & Asset
         </TextWord>
         <TextWord padding={"0 0 0 0rem"}>Management</TextWord>
       </MainTextHeading>
 
       <Para>
         This platform offers a seamless blend of financial services, asset
-        management, and technology. Integrated with NBFCs, OEMs, and dealers, it
+        management, and technology. Integrated with NBFCs, OEMs, and dealers. It
         simplifies complex operations into one unified solution.
       </Para>
 

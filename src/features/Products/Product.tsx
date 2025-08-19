@@ -17,6 +17,13 @@ const TextParent = styled.div`
     font-size: 3rem;
     color: var(--color-brand-original-blue-400);
   }
+  h4 span {
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: var(--color-brand-green-100);
+    font-weight: 400;
+    /* padding-left: 1rem; */
+  }
   div {
     display: flex;
     justify-content: end;
@@ -65,12 +72,14 @@ export default function Product() {
       <StyledProduct>
         <TextParent>
           <h1>01</h1>
-          <h4>Risk Engine</h4>
+          <h4>
+            Risk Engine <span>(digital underwriting)</span>
+          </h4>
           <Text>
             Risk engine is an advanced analytics platform that streamlines
             customer onboarding by generating a comprehensive risk score.
-            derived from factors such as digital footprint, identity confidence,
-            social footprint, and telecom risk, it enables smarter, faster, and
+            Derived from factors such as digital footprint, identity confidence,
+            social footprint, and telecom risk. It enables smarter, faster, and
             more reliable decision-making.
           </Text>
           <div>
@@ -94,12 +103,14 @@ export default function Product() {
         </ImageParent>
         <TextParent>
           <h1>02</h1>
-          <h4>Digital Twin</h4>
+          <h4>
+            Digital Twin <span>(battery pulse)</span>
+          </h4>
           <Text>
-            Battery pulse is a smart battery intelligence platform designed to
-            deeply monitor battery performance and lifecycle. it analyzes
+            Digital Twin is a smart battery intelligence platform designed to
+            deeply monitor battery performance and lifecycle. It analyzes
             real-time data from all internal cells, tracks every activity, and
-            provides actionable insights on health, efficiency, and faults. with
+            provides actionable insights on health, efficiency, and faults. With
             built-in inventory management and usage analytics, battery pulse
             ensures optimal uptime and proactive maintenance for your battery
             ecosystem.
@@ -119,12 +130,14 @@ export default function Product() {
       <StyledProduct>
         <TextParent>
           <h1>03</h1>
-          <h4>Karma Index</h4>
+          <h4>
+            Karma Index <span>(behavioral analytics)</span>
+          </h4>
           <Text>
             Karma index is a dynamic performance metric that evaluates customer
             reliability by analyzing real-time driving behavior and payment
-            discipline. it incorporates key indicators such as dpd, emi
-            timeliness, vehicle usage, and earning-to-expense patterns. by
+            discipline. It incorporates key indicators such as dpd, emi
+            timeliness, vehicle usage, and earning-to-expense patterns. By
             blending behavioral and financial data, the karma index provides a
             holistic score that helps identify trustworthy and consistent
             customers.
@@ -143,6 +156,37 @@ export default function Product() {
         <ImageParent>
           <Image src="karma.png"></Image>
         </ImageParent>
+      </StyledProduct>
+      <StyledProduct>
+        <ImageParent>
+          <Image src="service.png"></Image>
+        </ImageParent>
+        <TextParent>
+          <h1>04</h1>
+          <h4>
+            AI Genie <span>(pro-active service maintenance)</span>
+          </h4>
+          <Text>
+            Service AI Genie is a performance intelligence module that measures
+            the efficiency and reliability of after-sales service. It tracks key
+            metrics such as turnaround time (TAT) for service engineers and
+            drivers, resolution rates and types, recurrence of faults, run
+            kilometers, and fault trends. Leveraging predictive alerts from our
+            advanced models, Service Gini enables proactive maintenance, reduces
+            downtime, and ensures faster resolutions — driving higher
+            reliability and customer satisfaction.
+          </Text>
+          <div>
+            <a
+              href={"https://underwrite.echargeup.com/service"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              click here
+              <FaArrowRightLong></FaArrowRightLong>
+            </a>
+          </div>
+        </TextParent>
       </StyledProduct>
     </>
   );

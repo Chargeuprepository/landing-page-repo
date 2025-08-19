@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHeroImage = styled.div`
-  padding: 0rem 10rem 0rem 6rem;
+  padding: 2rem 6rem 100rem 8rem;
   width: 100%;
 `;
 const StyledImage = styled.img``;

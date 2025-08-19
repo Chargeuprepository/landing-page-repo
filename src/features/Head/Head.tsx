@@ -31,10 +31,11 @@ const Right = styled.div`
 `;
 const Items = styled.a<itemsprops>`
   text-transform: capitalize;
-  font-size: 1.7rem;
-  color: var(--color-brand-blue-300);
+  font-size: 1.6rem;
+  color: var(--color-brand-blue-100);
   font-weight: 500;
   padding: ${(props) => props.padding};
+  transition: all 0.3s;
 
   &:hover {
     color: var(--color-brand-blue-500);
@@ -49,6 +50,9 @@ const Items = styled.a<itemsprops>`
   svg &:hover {
     color: var(--color-brand-blue-500);
   }
+
+  /* span {
+  } */
 `;
 
 export default function Head({
@@ -79,7 +83,14 @@ export default function Head({
           target="_blank"
           rel="noopener noreferrer"
         >
-          Karma Index
+          KARMA Index
+        </Items>
+        <Items
+          href={"https://underwrite.echargeup.com/service"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          AI Genie
         </Items>
       </Left>
       <Right>

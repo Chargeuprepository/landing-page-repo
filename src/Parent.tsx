@@ -4,10 +4,10 @@ import HeroLayout from "./features/Hero/HeroLayout";
 import { useRef, useState } from "react";
 import ContactForm from "./features/UI/ContactForm";
 import ProductsLayout from "./features/Products/ProductsLayout";
+import Footer from "./features/Footer/Footer";
 
 const ParentWrapper = styled.div`
   position: relative;
-  margin-bottom: 15rem;
 `;
 const BackImage = styled.img`
   position: absolute;
@@ -32,6 +32,7 @@ export default function Parent() {
       <Head setOpen={setOpen}></Head>
       <HeroLayout setOpen={setOpen} handleScroll={handleScroll}></HeroLayout>
       <ProductsLayout sectionRef={sectionRef}></ProductsLayout>
+      <Footer></Footer>
     </ParentWrapper>
   );
 }
